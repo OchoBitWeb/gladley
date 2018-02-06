@@ -1,1 +1,13 @@
 /* Gladley's Main stylesheet */
+
+/*HEADINGS*/
+.homepage-banner h {
+	font-size: 60px;
+	line-height: 48px;
+}
+.promo-bar {
+	font-size: 24px;
+	line-height: 26px;
+	background-color: #572b19;
+	color: #d2a74a;
+}
