@@ -1,56 +1,88 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
-<link rel="stylesheet" type="text/css" charset="UTF-8" href="css/base.css">
-<link rel="stylesheet" type="text/css" charset="UTF-8" href="css/styles.css">
-<script type="text/javascript" charset="UTF-8" src="/js/carousel.js"></script>
+<!DOCTYPE HTML>
+<link rel="stylesheet" type="text/css" media="all" href="css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/style-m.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="css/style-l.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <html>
 <head>
     <title>Gladley's Candy Kitchen</title>
 </head>
-<body>
-    <header>
-    	<div class="top-bar Wishlist">
-    		<nav class="top-bar-bar">
-    		<ul class="nav nav-pills nav-fill">
-				<li class="nav-item">
-				<a class="nav-link active" href="#">1-855-GLADLEYS</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#">SIGN-IN</a>
-				</li>
-    		</ul>
-    	</div>
-    	<nav class="header-bar">
-    		<ul class="nav nav-pills nav-fill">
-				<li class="nav-item">
-				<a class="nav-link active" href="#">Discover<br>My Oh Mys</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#">Shop<br>Candy</a>
-				</li>
-				<li>GLADLEYS LOGO HERE</li>
-				<li class="nav-item">
-				<a class="nav-link" href="#">Our<br>Story</a>
-				</li>
-				<li class="nav-item">
-				<a class="nav-link disabled" href="#">Customer<br>Care</a>
-				</li>
-			</ul>
-    	</nav>	
-    	<div class="homepage-promo-box">
-    		<h3>FREE STANDARD SHIPPING ON ORDERS OF $25 OR MORE. USE CODE: WINTER</h3>
+<body class="page-wrapper">
+    <header class="page-header">
+    	<div class="panel wrapper">
+    		<div class="panel header">
+    			<a class="contentarea" href="#"><span>1-855-gladleys</span></a>
+				<ul class="header links">        
+					<li class="authorization-link">
+				    	<a href="#">Sign-In</a>
+				    </li>   
+				</ul>
+			</div>
+		</div>
+
+		<div class="sections nav-sections">
+			<div class="section-items nav-sections-items">
+				<div class="section-item-content nav-sections-item-content">
+					<nav class="navigation">
+						<ul class="ui-menu ui-widget ui-widget-content ui-corner-all">
+							<li class="level0 first level-top parent ui-menu-item">
+								<a class="nav-link active" href="#">Discover<br>My Oh Mys</a>
+							</li>
+							<li class="level0 level-top parent ui-menu-item">
+								<a class="nav-link" href="#">Shop<br>Candy</a>
+							</li>
+							<li class="level0 level-top parent ui-menu-item">
+								<img src="/images/logo.png">
+							</li>
+							<li class="level0 level-top parent ui-menu-item">
+								<a class="nav-link" href="#">Our<br>Story</a>
+							</li>
+							<li class="level0 last level-top parent ui-menu-item">
+								<a class="nav-link disabled" href="#">Customer<br>Care</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+    	<div class="header content">
+    		<h3>Free standard shipping on orders of $25 or more. Use code: WINTER</h3>
     	</div>
     </header>
-    <!–BANNER –> 
-    <div class="container-fluid">
-    	<div class="jumbotron jumbotron-fluid">
-		  <div class="container">
-		    <h1 class="display-4">Buy More, Save More</h1>
-		    <p class="lead">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
-		    <button type="button" class="btn btn-primary btn-lg">SHOP MY OH MYS</button>
-		  </div>
-		</div>
-    </div>
-    <!–GRIDS –> 
+
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme">
+	    <div class="item">
+	    	<div class="owl-text">
+	    		<h1 class="display-4">Buy More, Save More</h1>
+			    <p class="lead">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
+			    <button type="button" class="btn btn-primary btn-lg">SHOP MY OH MYS</button>
+	    	</div>
+	    </div>
+	    <div class="item">
+	    	<div class="owl-text">
+	    		<h1 class="display-4">Buy More, Save More</h1>
+			    <p class="lead">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
+			    <button type="button" class="btn btn-primary btn-lg">SHOP MY OH MYS</button>
+	    	</div>
+	    </div>
+	</div>
+    <script type="text/javascript">
+            $(document).ready(function() {
+              $('.owl-carousel').owlCarousel({
+				 items:1,
+			    loop:true,
+			    margin:10,
+			    autoplay:true,
+			    autoplayTimeout:1000,
+			    autoplayHoverPause:true,
+			    rewind:true
+				});
+            })  
+    </script>
+
+    <!-- GRIDS --> 
 	<div class="container">
 	  <div class="row">
 	    <div class="col-lg-4">
@@ -151,5 +183,7 @@
   		</div>		    
   		</div> 
     </footer>
+
+		<script src="js/owl.carousel.min.js"></script>
 </body>
 </html>

@@ -1,13 +1,42 @@
 /* Gladley's Main stylesheet */
 
-/*HEADINGS*/
-.homepage-banner h {
-	font-size: 60px;
-	line-height: 48px;
+/*******HEADER*******/
+
+.page-header .panel.wrapper {
+	background-color: #d2a74a;
+    min-height: 35px;
 }
-.promo-bar {
-	font-size: 24px;
-	line-height: 26px;
+
+/***nav***/
+.nav-sections {
+	margin-bottom: 0;
+	background-color: #f1efdc;
+}
+.navigation {
+	background-color: #f1efdc;
+}
+.navigation ul {
+    justify-content: space-evenly;
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.header.content {
 	background-color: #572b19;
-	color: #d2a74a;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    color: #d2a74a;
+}
+
+/***********BODY*************/
+
+/***Slide***/
+.owl-item {
+	background-image: url(/images/672858860.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 540px;
 }
