@@ -1,5 +1,101 @@
 /* Gladley's Main stylesheet */
 
+
+/**Fonts**/
+*{
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+h2 {
+    font-family: 'Sentinel A', 'Sentinel B';
+    font-weight: 300;
+    font-style: normal;
+}
+
+/**Grid**/
+* {
+  box-sizing: border-box;
+}
+.grid {
+  margin: 0 0 20px 0;
+}
+.grid:after {
+  /* Or @extend clearfix */
+  content: "";
+  display: table;
+  clear: both;
+}
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+}
+.grid [class*='col-']:last-of-type {
+  padding-right: 0;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+.col-2-3-off {
+    margin-left: 16.65%;
+}
+.module {
+  padding: 1em;
+}
+/* Opt-in outside padding */
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+.grid-pad [class*='col-']:last-of-type {
+  padding-right: 20px;
+}
+
+
+/**Global**/
+body {
+    background-color: #f1efdc;
+}
+
+/***Buttons***/
+button:not(.primary) {
+    box-shadow: none;
+}
+.btn {
+    color: #fff;
+    background-color: #d2a74a;
+    border: none;
+    height: 50px;
+    border-radius: 5px;
+    font-family: "Brandon Grotesque Bold", sans-serif;
+    font-weight: initial;
+    text-transform: uppercase;
+    font-size: 21px;
+    max-width: 230px;
+}
+.btn.btn-alt {
+    color: #e2892d;
+    background-color: transparent;
+    border: 2px solid #e2892d;
+}
+.btn:hover, .btn.btn-alt:hover {
+    color: #fff;
+    background-color: #e2892d;
+    border: none;
+    order: 2px solid transparent;
+} 
+
 /*******HEADER*******/
 
 .page-header .panel.wrapper {
@@ -39,4 +135,68 @@
     background-size: cover;
     background-position: center;
     height: 540px;
+}
+.owl-text {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em 10em;
+    width: auto;
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner .item.content {
+    max-width: 65%;
+}
+.banner .content h2.title {
+    font-family: 'Sentinel A', 'Sentinel B';
+    font-weight: 300;
+    font-size: 60px;
+    color: #f1efdc;
+}
+.banner .content .info {
+    font-size: 28px;
+    color: #f1efdc;
+    margin-bottom: 1.2em;
+}
+
+/**Inner**/
+
+.main-message {
+    text-align: center;
+}
+.main-message h2 {
+    font-family: 'Sentinel A', 'Sentinel B';
+    font-size: 40px;
+    color:#e2892d;
+    line-height: 44px;
+}
+.main-message p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e2892d;
+    line-height: 44px;
+}
+.promo-box-headline {
+    background: #fff;
+    display: flex;
+    margin-top: -5px;
+    padding: 1em;
+    text-align: center;
+}
+.promo-box-headline h3 {
+    font-size: 40px;
+    color: #c42026;
+    line-height: 44px;
+}
+
+/**********FOOTER*********/
+
+.page-footer {
+    background: #fff;
+}
+.footer.content .block {
+    float:left;
 }

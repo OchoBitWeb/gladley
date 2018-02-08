@@ -52,7 +52,6 @@ html {
 }
 body {
   color: #333333;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42857143;
@@ -159,7 +158,6 @@ h4 .small,
 h5 .small,
 h6 .small {
   color: #333333;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1;
@@ -257,7 +255,6 @@ blockquote {
   margin: 0 0 20px 40px;
   padding: 0;
   color: #333333;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-style: italic;
   font-weight: 400;
   line-height: 1.42857143;
@@ -333,7 +330,6 @@ button {
   color: #333333;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin: 0;
   padding: 7px 15px;
@@ -376,7 +372,6 @@ input[type="email"] {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 32px;
   line-height: 1.42857143;
@@ -447,7 +442,6 @@ select {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 32px;
   line-height: 1.42857143;
@@ -468,7 +462,6 @@ textarea {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: auto;
   line-height: 1.42857143;
@@ -631,7 +624,6 @@ fieldset[disabled] .action-primary {
   border: 1px solid #cccccc;
   color: #333333;
   cursor: pointer;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin: 0;
   padding: 7px 15px;
@@ -2763,34 +2755,6 @@ fieldset[disabled] .form.send.friend .action.remove {
 .cart-discount .field {
   display: table-cell;
 }
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/light/opensans-300.eot');
-  src: url('../fonts/opensans/light/opensans-300.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/light/opensans-300.woff2') format('woff2'), url('../fonts/opensans/light/opensans-300.woff') format('woff'), url('../fonts/opensans/light/opensans-300.ttf') format('truetype'), url('../fonts/opensans/light/opensans-300.svg#Open Sans') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/regular/opensans-400.eot');
-  src: url('../fonts/opensans/regular/opensans-400.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/regular/opensans-400.woff2') format('woff2'), url('../fonts/opensans/regular/opensans-400.woff') format('woff'), url('../fonts/opensans/regular/opensans-400.ttf') format('truetype'), url('../fonts/opensans/regular/opensans-400.svg#Open Sans') format('svg');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/semibold/opensans-600.eot');
-  src: url('../fonts/opensans/semibold/opensans-600.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/semibold/opensans-600.woff2') format('woff2'), url('../fonts/opensans/semibold/opensans-600.woff') format('woff'), url('../fonts/opensans/semibold/opensans-600.ttf') format('truetype'), url('../fonts/opensans/semibold/opensans-600.svg#Open Sans') format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/bold/opensans-700.eot');
-  src: url('../fonts/opensans/bold/opensans-700.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/bold/opensans-700.woff2') format('woff2'), url('../fonts/opensans/bold/opensans-700.woff') format('woff'), url('../fonts/opensans/bold/opensans-700.ttf') format('truetype'), url('../fonts/opensans/bold/opensans-700.svg#Open Sans') format('svg');
-  font-weight: 700;
-  font-style: normal;
-}
 .items {
   margin: 0;
   padding: 0;
@@ -3360,7 +3324,6 @@ body > .loading-mask {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 32px;
   line-height: 1.42857143;
@@ -3692,7 +3655,6 @@ a.action.primary:focus {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   padding: 7px 15px;
   font-size: 1.4rem;
@@ -4487,7 +4449,6 @@ body._has-modal-custom .modal-custom-overlay {
   background-clip: padding-box;
   border: 1px solid #c2c2c2;
   border-radius: 1px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 32px;
   line-height: 1.42857143;
@@ -10577,7 +10538,6 @@ fieldset[disabled] .my-credit-cards-popup .action.secondary {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   padding: 7px 15px;
   font-size: 1.4rem;

@@ -1,12 +1,17 @@
 <!DOCTYPE HTML>
-<link rel="stylesheet" type="text/css" media="all" href="css/owl.carousel.min.css">
-<link rel="stylesheet" type="text/css" media="all" href="css/style-m.css">
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="css/style-l.css">
-<link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<html>
+<html lang="en-US">
 <head>
-    <title>Gladley's Candy Kitchen</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Gladley's Candy Kitchen</title>
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://use.typekit.net/ijj7skt.css">
+	<link rel="stylesheet" href="https://cloud.typography.com/6602416/7911592/css/fonts.css" />
+	<link rel="stylesheet" type="text/css" media="all" href="css/style-m.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="css/style-l.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 </head>
 <body class="page-wrapper">
     <header class="page-header">
@@ -20,7 +25,7 @@
 				</ul>
 			</div>
 		</div>
-
+		<!-- Nav -->
 		<div class="sections nav-sections">
 			<div class="section-items nav-sections-items">
 				<div class="section-item-content nav-sections-item-content">
@@ -52,121 +57,146 @@
     </header>
 
     <!-- SLIDER -->
-    <div class="owl-carousel owl-theme">
-	    <div class="item">
+    <div class="owl-carousel banner">
+	    <div class="item content">
 	    	<div class="owl-text">
-	    		<h1 class="display-4">Buy More, Save More</h1>
-			    <p class="lead">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
-			    <button type="button" class="btn btn-primary btn-lg">SHOP MY OH MYS</button>
+	    		<h2 class="title">Buy More, Save More</h2>
+			    <p class="info">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
+			    <button type="button" class="btn">Shop my oh Mys</button>
 	    	</div>
 	    </div>
-	    <div class="item">
+	    <div class="item content">
 	    	<div class="owl-text">
-	    		<h1 class="display-4">Buy More, Save More</h1>
-			    <p class="lead">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
-			    <button type="button" class="btn btn-primary btn-lg">SHOP MY OH MYS</button>
+	    		<h2 class="title">Buy More, Save More</h2>
+			    <p class="info">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
+			    <button type="button" class="btn">Shop my oh Mys</button>
 	    	</div>
 	    </div>
 	</div>
     <script type="text/javascript">
             $(document).ready(function() {
               $('.owl-carousel').owlCarousel({
-				 items:1,
+				items:1,
 			    loop:true,
 			    margin:10,
 			    autoplay:true,
 			    autoplayTimeout:1000,
 			    autoplayHoverPause:true,
-			    rewind:true
+			    rewind:true,
 				});
             })  
     </script>
 
-    <!-- GRIDS --> 
-	<div class="container">
-	  <div class="row">
-	    <div class="col-lg-4">
-	      <h2>Create Your Own<br>My Oh Mys</h2>
-	    </div>
-	    <div class="col-lg-4">
-	      <h2>Find<br>The Perfect Gift</h2>
-	    </div>
-	    <div class="col-lg-4">
-	      <h2>Shop Our<br>Holiday Collection</h2>
-	    </div>
-	  </div>
-	  <h2>Our My Oh Mys have been described as heavenly, delectable and amazing, to name a few.  Because you choose the ingredients, they're a reflection of you!</h2>	
-	  <p>ENJOY!</p>
-	</div>
+    <div id="maincontent" class="page-main">
+    	<!-- GRIDS --> 
+		<div class="columns">
+			<div class="column promo-box grid">
+			    <div class="col-1-3 ">
+			    	<div class="module">
+			    		<img class="promo-box-img" src="images/1.jpg">
+			    		<div class="promo-box-headline">
+			    			<h3><span>Create Your Own </span>My Oh Mys</h3>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="col-1-3">
+			    	<div class="module">
+			    		<img class="promo-box-img" src="images/2.jpg">
+			    		<div class="promo-box-headline">
+			    			<h3><span>Find </span>The Perfect Gift</h3>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="col-1-3">
+			    	<div class="module">
+			    		<img class="promo-box-img" src="images/3.jpg">
+			    		<div class="promo-box-headline">
+			    			<h3><span>Shop Our </span>Holiday Collection</h3>
+			    		</div>
+			    	</div>
+			    </div>
+			</div>
+			<div class="grid main-message">
+				<div class="col-2-3 col-2-3-off">
+					<h2>Our My Oh Mys have been described as heavenly, delectable and amazing, to name a few.  Because you choose the ingredients, they're a reflection of you!</h2>	
+					<p>ENJOY!</p>
+				</div>
+			</div>
+		</div>
+    </div>
 
-    <footer>
-    	<div class="container">
-		    <div class="row">
-		      <div class="col-lg-6">
-		        <h1>Join the family</h1> 
+    
+
+    <footer class="page-footer">
+    	<div class="footer content">
+    		<div class="block newsletter">
+    			<h1>Join the family</h1> 
 		        <p>Be the first to know what delightful treats we're creating in the Gladley's Candy Kitchen and receive exclusive sweet offers just for you!</p>
 		        <div class="row">  
 		          <div class="col-sm">
 		            <p>Enter e-mail address</p>
-		            <button type="button" class="btn btn-primary btn-sm">sign-up</button>
+		            <button type="button" class="btn btn-alt">sign-up</button>
 		          </div>  
 		          <div class="col-sm">
 		            <p>social media logos</p>
 		          </div>    
 		        </div>
-		      </div>
-		      <div class="col-lg-2">
-		        <h4>CUSTOMER CARE</h4> 
-		        <ul class="nav flex-column">
-				  <li class="nav-item">
-				    <a class="nav-link active" href="#">Order Tracking</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Shipping Info</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Return Policy</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link disabled" href="#">FAQ</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link disabled" href="#">Contact Us</a>
-				  </li>
-				</ul>
-		      </div>
-		      <div class="col-lg-2">
-		        <h4>COMPANY</h4> 
-		        <ul class="nav flex-column">
-				  <li class="nav-item">
-				    <a class="nav-link active" href="#">Our Story</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Press</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Blog</a>
-				  </li>
-				</ul>
-		      </div>
-		      <div class="col-lg-2">
-		        <h4>WORK WITH US</h4> 
-		        <ul class="nav flex-column">
-				  <li class="nav-item">
-				    <a class="nav-link active" href="#">Wholesale Corporate</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link" href="#">Giving</a>
-				  </li>
-				</ul>
-		      </div>
-		    </div>
-  		<div class="sub-footer">
-		  	<div class="row">
-		    	<div class="col-lg-6">
-		     	 <p>©2017 Gladleys.com. All rights reserved.</p>
-		    	</div>
-		    	<div class="col-lg-6">
+    		</div>
+    		<div class="block footer links">
+    			<div class="grid">
+    				<div class="col-1-3">
+    					<h4>CUSTOMER CARE</h4> 
+    					<ul class="nav flex-column">
+						  <li class="nav-item">
+						    <a class="nav-link active" href="#">Order Tracking</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Shipping Info</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Return Policy</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link disabled" href="#">FAQ</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link disabled" href="#">Contact Us</a>
+						  </li>
+						</ul>
+    				</div>
+    				<div class="col-1-3">
+						<h4>COMPANY</h4> 
+				        <ul class="nav flex-column">
+						  <li class="nav-item">
+						    <a class="nav-link active" href="#">Our Story</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Press</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Blog</a>
+						  </li>
+						</ul>
+    				</div>
+    				<div class="col-1-3">
+    					<h4>WORK WITH US</h4> 
+				        <ul class="nav flex-column">
+						  <li class="nav-item">
+						    <a class="nav-link active" href="#">Wholesale Corporate</a>
+						  </li>
+						  <li class="nav-item">
+						    <a class="nav-link" href="#">Giving</a>
+						  </li>
+						</ul>
+    				</div>
+    			</div>
+    		</div>
+    	</div> 
+    </footer>
+
+    <small class="copyright">
+	    <span>©2018 Gladleys.com. All rights reserved.</span>
+
 					<ul class="nav justify-content-end">
 					  <li class="nav-item">
 					    <a class="nav-link active" href="#">Sitemap</a>
@@ -178,12 +208,9 @@
 					    <a class="nav-link" href="#">Privacy Policy</a>
 					  </li>
 					</ul>
-		    	</div>
-  			</div>
-  		</div>		    
-  		</div> 
-    </footer>
+		 
+	</small>
 
-		<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 </body>
 </html>
