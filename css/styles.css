@@ -13,60 +13,21 @@ h2 {
     font-style: normal;
 }
 
-/**Grid**/
-* {
-  box-sizing: border-box;
-}
-.grid {
-  margin: 0 0 20px 0;
-}
-.grid:after {
-  /* Or @extend clearfix */
-  content: "";
-  display: table;
-  clear: both;
-}
-[class*='col-'] {
-  float: left;
-  padding-right: 20px;
-}
-.grid [class*='col-']:last-of-type {
-  padding-right: 0;
-}
-.col-2-3 {
-  width: 66.66%;
-}
-.col-1-3 {
-  width: 33.33%;
-}
-.col-1-2 {
-  width: 50%;
-}
-.col-1-4 {
-  width: 25%;
-}
-.col-1-8 {
-  width: 12.5%;
-}
-.col-2-3-off {
-    margin-left: 16.65%;
-}
-.module {
-  padding: 1em;
-}
-/* Opt-in outside padding */
-.grid-pad {
-  padding: 20px 0 20px 20px;
-}
-.grid-pad [class*='col-']:last-of-type {
-  padding-right: 20px;
-}
-
-
 /**Global**/
 body {
     background-color: #f1efdc;
 }
+p, li, span {
+    color: #572b19;
+}
+a, .alink, a:visited, .alink:visited {
+    color: #f7f5e6;
+}
+a:hover {
+    color: #572b19;
+    text-decoration: none;
+}
+
 
 /***Buttons***/
 button:not(.primary) {
@@ -102,6 +63,16 @@ button:not(.primary) {
 	background-color: #d2a74a;
     min-height: 35px;
 }
+.contentarea span, .header.links, .header.panel > .header.links > li > a {
+    font-size: 16px;
+    color: #f1efdc;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.header.panel > .header.links > li > a:hover, .contentarea span:hover {
+    color: #572b19;
+    text-decoration: none;
+}
 
 /***nav***/
 .nav-sections {
@@ -116,6 +87,19 @@ button:not(.primary) {
     display: flex;
     max-width: 960px;
     margin: 0 auto;
+    min-height: 125px;
+}
+a.nav-link {
+    font-weight: 500;
+    font-size: 21px;
+    color: #c59a3f;
+    letter-spacing: 0.025em;
+}
+.navigation .level0 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 .header.content {
 	background-color: #572b19;
@@ -125,6 +109,16 @@ button:not(.primary) {
     padding: 10px;
     color: #d2a74a;
 }
+.header.content h3 {
+    margin: 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #d2a74a;
+    letter-spacing: 0.05em;
+}
+
+
 
 /***********BODY*************/
 
@@ -142,13 +136,14 @@ button:not(.primary) {
     margin-right: auto;
     padding: 1em 10em;
     width: auto;
-    min-height: 540px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100%;
 }
 .banner .item.content {
     max-width: 65%;
+    height: 100%;
 }
 .banner .content h2.title {
     font-family: 'Sentinel A', 'Sentinel B';
@@ -161,9 +156,38 @@ button:not(.primary) {
     color: #f1efdc;
     margin-bottom: 1.2em;
 }
+.owl-carousel.owl-drag .owl-item {
+    max-height: 450px;
+}
 
 /**Inner**/
 
+.promo-box {
+    padding: 30px 0;
+}
+img.promo-box-img {
+    height: 290px;
+}
+.promo-box-headline {
+    background: #fff;
+    margin-top: -5px;
+    padding: 1em;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.promo-box-headline h3 {
+    font-size: 40px;
+    color: #c42026;
+    line-height: 44px;
+    margin: 0;
+}
+.promo-box-headline h3 span {
+    color: #c42026;
+    display: block;
+}
 .main-message {
     text-align: center;
 }
@@ -178,18 +202,7 @@ button:not(.primary) {
     font-size: 18px;
     color: #e2892d;
     line-height: 44px;
-}
-.promo-box-headline {
-    background: #fff;
-    display: flex;
-    margin-top: -5px;
-    padding: 1em;
-    text-align: center;
-}
-.promo-box-headline h3 {
-    font-size: 40px;
-    color: #c42026;
-    line-height: 44px;
+    margin-bottom: 30px;
 }
 
 /**********FOOTER*********/
@@ -199,4 +212,36 @@ button:not(.primary) {
 }
 .footer.content .block {
     float:left;
+}
+.newsletter {
+    max-width: 455px;
+}
+.newsletter .title h3 {
+    font-family: 'Sentinel A', 'Sentinel B';
+    font-size: 40px;
+    color: #572b19;
+    line-height: 44px;
+    margin: 0;
+}
+.newsletter .title p {
+    font-size: 21px;
+    color: #572b19;
+    line-height: 24px;
+}
+._keyfocus *:focus, input:not([disabled]):focus, textarea:not([disabled]):focus, select:not([disabled]):focus {
+    box-shadow: none;
+}
+input#newsletter {
+    color: #e2892d;
+    border: none;
+    border-bottom: 2px solid #e2892d;
+    float: left;
+    max-width: 280px;
+    margin-right: 25px;
+    height: 50px;
+}
+input#newsletter::placeholder {
+    color: #e2892d;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 21px;
 }
