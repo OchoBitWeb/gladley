@@ -2,12 +2,12 @@
 <html lang="en-US">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width" />
 	<title>Gladley's Candy Kitchen</title>
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" media="all" href="css/owl.carousel.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" href="https://use.typekit.net/ijj7skt.css">
 	<link rel="stylesheet" href="https://cloud.typography.com/6602416/7911592/css/fonts.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/grid.min.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/style-m.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="css/style-l.css">
 	<link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
@@ -52,41 +52,53 @@
 				</div>
 			</div>
 		</div>
+		<div class="menu-mobile">
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="#">About</a>
+			  <a href="#">Services</a>
+			  <a href="#">Clients</a>
+			  <a href="#">Contact</a>
+			</div>
+
+			<div id="main">
+			  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			</div>
+			
+		</div>
     	<div class="header content">
     		<h3>Free standard shipping on orders of $25 or more. Use code: WINTER</h3>
     	</div>
     </header>
 
     <!-- SLIDER -->
-    <div class="owl-carousel banner">
-	    <div class="item content">
-	    	<div class="owl-text">
-	    		<h2 class="title">Buy More, Save More</h2>
-			    <p class="info">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
-			    <button type="button" class="btn">Shop my oh Mys</button>
-	    	</div>
-	    </div>
-	    <div class="item content">
-	    	<div class="owl-text">
-	    		<h2 class="title">Buy More, Save More</h2>
-			    <p class="info">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
-			    <button type="button" class="btn">Shop my oh Mys</button>
-	    	</div>
-	    </div>
+    <div class="slideshow-container">
+		<div class="mySlides fade slide">
+			<img src="/images/672858860.jpg" style="width:100%">
+			<div class="text">
+				<h2 class="title">Buy More, Save More</h2>
+				<p class="info">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
+				<button type="button" class="btn">Shop my oh Mys</button>
+			</div>
+		</div>
+		<div class="mySlides fade slide">
+			<img src="/images/672858860.jpg" style="width:100%">
+			<div class="text">
+				<h2 class="title">Buy More, Save More</h2>
+				<p class="info">When you shop at Gladley's this holiday season, the more you spend, the more you save - 25% off $100, 20% off $75 or 15% off $50.</p>
+				<button type="button" class="btn">Shop my oh Mys</button>
+			</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 	</div>
-    <script type="text/javascript">
-            $(document).ready(function() {
-              $('.owl-carousel').owlCarousel({
-				items:1,
-			    loop:true,
-			    margin:10,
-			    autoplay:true,
-			    autoplayTimeout:1000,
-			    autoplayHoverPause:true,
-			    rewind:true,
-				});
-            })  
-    </script>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	</div>
 
     <div id="maincontent" class="page-main">
     	<!-- GRIDS --> 
@@ -149,13 +161,19 @@
 					                <button class="action subscribe btn btn-alt" title="Subscribe" type="submit">Sign-Up</button>
 					            </div>
 					        </form>
+					        <div class="social">
+					        	<span><i class="fab fa-twitter"></i></span>
+					        	<span><i class="fab fa-facebook-f"></i></span>
+					        	<span><i class="fab fa-instagram"></i></span>
+					        	<span><i class="fab fa-pinterest"></i></span>
+					        </div>
 						</div> 
     				</div>
 	    		</div>
     			<div class="col-md-7 col-sm-7">
     				<div class="row">
     					<div class="col-md-4">
-	    					<h4>CUSTOMER CARE</h4> 
+	    					<h4>Customer Care</h4> 
 	    					<ul class="nav flex-column">
 							  <li class="nav-item">
 							    <a class="nav-link active" href="#">Order Tracking</a>
@@ -175,7 +193,7 @@
 							</ul>
 	    				</div>
 	    				<div class="col-md-4">
-							<h4>COMPANY</h4> 
+							<h4>Company</h4> 
 					        <ul class="nav flex-column">
 							  <li class="nav-item">
 							    <a class="nav-link active" href="#">Our Story</a>
@@ -189,7 +207,7 @@
 							</ul>
 	    				</div>
 	    				<div class="col-md-4">
-	    					<h4>WORK WITH US</h4> 
+	    					<h4>Work with us</h4> 
 					        <ul class="nav flex-column">
 							  <li class="nav-item">
 							    <a class="nav-link active" href="#">Wholesale Corporate</a>
@@ -206,22 +224,22 @@
     </footer>
 
     <small class="copyright">
-	    <span>©2018 Gladleys.com. All rights reserved.</span>
-
-					<ul class="nav justify-content-end">
-					  <li class="nav-item">
-					    <a class="nav-link active" href="#">Sitemap</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">Terms of Use</a>
-					  </li>
-					  <li class="nav-item">
-					    <a class="nav-link" href="#">Privacy Policy</a>
-					  </li>
-					</ul>
-		 
+    	<div class="content">
+    		<span>©2018 Gladleys.com. All rights reserved.</span>
+			<ul class="nav justify-content-end">
+			  <li class="nav-item">
+			    <a class="nav-link active" href="#">Sitemap</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Terms of Use</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" href="#">Privacy Policy</a>
+			  </li>
+			</ul>
+    	</div>
 	</small>
 
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/custom.js"></script>
 </body>
 </html>
