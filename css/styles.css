@@ -16,6 +16,8 @@ h2 {
     font-family: 'Sentinel A', 'Sentinel B';
     font-weight: 300;
     font-style: normal;
+    font-size: 60px;
+    color: #f1efdc;
 }
 
 /**Global**/
@@ -74,6 +76,9 @@ button:not(.primary) {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
+.header.panel > .header.links > li {
+	margin-left: 20px;
+}
 .header.panel > .header.links > li > a:hover, .contentarea span:hover {
     color: #572b19;
     text-decoration: none;
@@ -96,8 +101,8 @@ button:not(.primary) {
 }
 a.nav-link {
     font-weight: 500;
-    font-size: 21px;
-    color: #c59a3f;
+    font-size: 22px;
+    color: #572b19;
     letter-spacing: 0.025em;
 }
 .navigation .level0 {
@@ -147,26 +152,29 @@ a.nav-link {
     justify-content: center;
     flex-direction: column;
     height: 100%;
-}
-.banner .item.content {
+    text-align: left;
     max-width: 65%;
     height: 100%;
 }
-.banner .content h2.title {
+h2.title {
     font-family: 'Sentinel A', 'Sentinel B';
     font-weight: 300;
     font-size: 60px;
     color: #f1efdc;
 }
-.banner .content .info {
+p.info {
     font-size: 28px;
     color: #f1efdc;
     margin-bottom: 1.2em;
 }
-.owl-carousel.owl-drag .owl-item {
-    max-height: 450px;
+.dot {
+	background: none;
+    border: 2px solid #fff;
 }
-
+.dot.active {
+	background: #fff;
+    border: 2px solid #fff;
+}
 /**Inner**/
 
 .promo-box {
@@ -219,7 +227,7 @@ img.promo-box-img {
 }
 .footer.content {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .footer.content .block {
     float:left;
@@ -258,8 +266,19 @@ input#newsletter::placeholder {
     font-family: "brandon-grotesque", sans-serif;
     font-size: 21px;
 }
+.social {
+	margin-top: 40px;
+}
+.social span {
+	margin-right: 25px;
+    font-size: 21px;
+    color: #e2892d;
+}
 .footer h4 {
     margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #572b19;
 }
 .footer a.nav-link {
     font-size: 16px;
@@ -269,6 +288,7 @@ input#newsletter::placeholder {
 .copyright {
     background: #fff;
     border-top: 1px solid #c59a3f;
+    padding: 30px;
 }
 .copyright .content {
     display: flex;
