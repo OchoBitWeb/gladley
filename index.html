@@ -42,16 +42,128 @@
 								<a class="nav-link active" href="#">Discover<br>My Oh Mys</a>
 							</li>
 							<li class="level0 level-top parent ui-menu-item">
-								<a class="nav-link" href="#">Shop<br>Candy</a>
+								<div class="level1 dropdown shop-candy">
+								    <button class="dropbtn">Shop </br>Candy</button>
+								    <div class="dropdown-content">  
+								      <div class="row">
+								        <div class="column">
+								          <h3>By Collection</h3>
+								          <a href="#">Assortments</a>
+								          <a href="#">Best Sellers</a>
+								          <a href="#">Gifts</a>
+								        </div>
+								        <div class="column">
+								          <h3>By Holiday</h3>
+								          <a href="#">Christmas</a>
+								          <a href="#">Valentine's Day</a>
+								          <a href="#">Easter</a>
+								          <a href="#">Mother's Day</a>
+								          <a href="#">Father's Day</a>
+								          <a href="#">Halloween</a>
+								          <a href="#">Thanksgiving</a>
+								        </div>
+								        <div class="column">
+								          <h3>By Occassion</h3>
+								          <a href="#">Birthday</a>
+								          <a href="#">Thank You</a>
+								          <a href="#">Graduation</a>
+								          <a href="#">Congratulations</a>
+								          <a href="#">Wedding</a>
+								        </div>
+								        <div class="column">
+								          <h3>By Price</h3>
+								          <a href="#">Under $25</a>
+								          <a href="#">Under $50</a>
+								          <a href="#">Under $100</a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+								        		<img src="images/menu1.jpg">
+								          		<h4>Free Shipping</h4>
+								        	</a>
+								        </div>
+								    </div>
+								</div>
 							</li>
 							<li class="level0 level-top parent ui-menu-item">
 								<img src="images/logo.png">
 							</li>
 							<li class="level0 level-top parent ui-menu-item">
-								<a class="nav-link" href="#">Our<br>Story</a>
+								<div class="level1 dropdown our-story">
+								    <button class="dropbtn">Our </br>Story</button>
+								    <div class="dropdown-content">  
+								      <div class="row">
+								        <div class="column">
+								          <h3>Company</h3>
+								          <a href="#">Our Story</a>
+								          <a href="#">Press</a>
+								          <a href="#">Blog</a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+									          <img src="images/menu1.jpg">
+									          <h4>Holiday</h4>
+									         </a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+									          <img src="images/menu1.jpg">
+									          <h4>Gifts</h4>
+									        </a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+									          <img src="images/menu1.jpg">
+									          <h4>Sales</h4>
+									        </a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+									          <img src="images/menu1.jpg">
+									          <h4>Free Shipping</h4>
+									         </a>
+								        </div>
+								    </div>
+								</div>
 							</li>
 							<li class="level0 last level-top parent ui-menu-item">
-								<a class="nav-link disabled" href="#">Customer<br>Care</a>
+								<div class="level1 dropdown customer-care">
+								    <button class="dropbtn">Customer </br>Care</button>
+								    <div class="dropdown-content">  
+								      <div class="row">
+								        <div class="column">
+								          <h3>Customer Care</h3>
+								          <a href="#">Order Tracking</a>
+								          <a href="#">Shipping Info</a>
+								          <a href="#">FAQ</a>
+								          <a href="#">Contact Us</a>
+								        </div>
+								        <div class="column">
+								          <h3>Policies</h3>
+								          <a href="#">Return Policy</a>
+								          <a href="#">Terms of Use</a>
+								          <a href="#">Privacy</a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+									          <img src="images/menu1.jpg">
+									          <h4>Gifts</h4>
+									        </a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+									          <img src="images/menu1.jpg">
+									          <h4>Sales</h4>
+									        </a>
+								        </div>
+								        <div class="column">
+								        	<a href="#">
+									          <img src="images/menu1.jpg">
+									          <h4>Free Shipping</h4>
+									        </a>
+								        </div>
+								    </div>
+								</div>
 							</li>
 						</ul>
 					</nav>
@@ -61,14 +173,16 @@
 		<div class="menu-mobile">
 			<div id="mySidenav" class="sidenav">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="#">About</a>
-			  <a href="#">Services</a>
-			  <a href="#">Clients</a>
-			  <a href="#">Contact</a>
+			  <a href="#">Discover My Oh Mys</a>
+			  <a href="#">Shop Candies</a>
+			  <a href="#">Our Story</a>
+			  <a href="#">Customer Care</a>
 			</div>
 
-			<div id="main">
-			  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			<div id="main" class="nosticky">
+			    <span onclick="openNav()">&#9776;</span>
+			    <img src="images/logo.png">
+				<a href="#"><i class="fas fa-shopping-bag"></i> (2)</a>
 			</div>
 			
 		</div>
@@ -149,7 +263,7 @@
     <footer class="page-footer">
     	<div class="footer content">
     		<div class="row">
-    			<div class="col-md-5 col-sm-5">
+    			<div class="col-md-5 col-sm-5 col-xs-12">
     				<div class="newsletter ">
     					<div class="title">
     						<h3>Join the family</h3> 
@@ -176,7 +290,7 @@
 						</div> 
     				</div>
 	    		</div>
-    			<div class="col-md-7 col-sm-7">
+    			<div class="col-md-7 col-sm-7 col-xs-12">
     				<div class="row">
     					<div class="col-md-4">
 	    					<h4>Customer Care</h4> 

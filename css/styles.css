@@ -1,6 +1,7 @@
 /* Gladley's Main stylesheet */
 
 @import url("_topnav.min.css");
+@import url("_dropdown-menu.css");
 @import url("_grid.min.css");
 @import url("_slideshow.min.css");
 
@@ -46,7 +47,7 @@ button:not(.primary) {
     border: none;
     height: 50px;
     border-radius: 5px;
-    font-family: "Brandon Grotesque Bold", sans-serif;
+    font-family: "brandon-grotesque", sans-serif;
     font-weight: initial;
     text-transform: uppercase;
     font-size: 21px;
@@ -105,6 +106,9 @@ a.nav-link {
     color: #572b19;
     letter-spacing: 0.025em;
 }
+a.nav-link:hover {
+    color: #c59a3f;
+}
 .navigation .level0 {
     display: flex;
     justify-content: center;
@@ -127,7 +131,7 @@ a.nav-link {
     color: #d2a74a;
     letter-spacing: 0.05em;
 }
-@media (min-width: 768px), print {
+@media (min-width: 992px), print {
     .sections .nav-sections {
         display: block;
     }
@@ -142,7 +146,7 @@ a.nav-link {
 
 /***Slide***/
 
-.text {
+.slideshow-container .text {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
@@ -155,6 +159,11 @@ a.nav-link {
     text-align: left;
     max-width: 65%;
     height: 100%;
+}
+@media (max-width: 991px) {
+    .slideshow-container .text {
+        display: none;
+    }
 }
 h2.title {
     font-family: 'Sentinel A', 'Sentinel B';
@@ -219,6 +228,23 @@ img.promo-box-img {
     line-height: 44px;
     margin-bottom: 30px;
 }
+@media (max-width: 991px) {
+    .promo-box .module {
+        margin-bottom: 3em;
+        display: flex;
+        align-items: stretch;
+        width: 100%;
+    }
+    .promo-box-img {
+        float: left;
+        width: 30%;
+        height: 100% !important;
+    }
+    .promo-box-headline {
+        height: inherit;
+        width: 100%;
+    }
+}
 
 /**********FOOTER*********/
 
@@ -274,6 +300,21 @@ input#newsletter::placeholder {
     font-size: 21px;
     color: #e2892d;
 }
+.social span svg {
+    transition-duration: 0.2s;
+}
+.social span .fa-twitter:hover {
+    color: #1da1f2;
+}
+.social span .fa-facebook-f:hover {
+    color: #3b5998;
+}
+.social span .fa-instagram:hover {
+    color: #bd081c;
+}
+.social span .fa-pinterest:hover {
+    color: #bd081c;
+}
 .footer h4 {
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -284,6 +325,9 @@ input#newsletter::placeholder {
     font-size: 16px;
     color: #572b19;
     line-height: 30px;
+}
+.footer a.nav-link:hover {
+    color: #d2a74a;
 }
 .copyright {
     background: #fff;
@@ -316,4 +360,7 @@ input#newsletter::placeholder {
 }
 .copyright .content a {
     padding: 0 10px;
+}
+.copyright .content a:hover {
+    color: #c59a3f;
 }

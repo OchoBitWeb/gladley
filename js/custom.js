@@ -39,3 +39,17 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+
+//Top Nav Sticky
+window.onscroll = function() {myFunction()};
+
+var nosticky = document.getElementById("main");
+var sticky = nosticky.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    nosticky.classList.add("sticky");
+  } else {
+    nosticky.classList.remove("sticky");
+  }
+}

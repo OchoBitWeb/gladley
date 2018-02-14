@@ -5,25 +5,25 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #f1efdc;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 15px 10px 15px 30px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    color: #572b19 !important;
     display: block;
     transition: 0.3s;
+    border-top: 2px solid #e8dcb9;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 800;
 }
-
 .sidenav a:hover {
     color: #f1f1f1;
 }
-
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -31,12 +31,35 @@
     font-size: 36px;
     margin-left: 50px;
 }
-
-#main {
+.menu-mobile #main {
     transition: margin-left .5s;
     padding: 16px;
+    display: flex;
+    justify-content: space-between;
 }
-
+.menu-mobile #main span {
+    font-size: 40px;
+    cursor: pointer;
+}
+.menu-mobile #main a {
+    color: #572b19;
+    font-size: 30px;
+}
+.menu-mobile #main img {
+    max-height: 50px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #f1efdc;
+    z-index: 999;
+}
+@media only screen and (max-width: 991px) {
+    .nav-sections, .page-header .panel.wrapper {
+        display: none;
+    }
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
