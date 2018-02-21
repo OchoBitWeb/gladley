@@ -1,7 +1,7 @@
 /* Gladley's Main stylesheet */
 
 @import url("_topnav.min.css");
-@import url("_dropdown-menu.css");
+@import url("_dropdown-menu.min.css");
 @import url("_grid.min.css");
 @import url("_slideshow.min.css");
 
